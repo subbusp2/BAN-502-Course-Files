@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.475">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Untitled</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="Mod3Assmnt2_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Mod3Assmnt2_files/libs/quarto-html/quarto.js"></script>
+<script src="Mod3Assmnt2_files/libs/quarto-html/popper.min.js"></script>
+<script src="Mod3Assmnt2_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="Mod3Assmnt2_files/libs/quarto-html/anchor.min.js"></script>
+<link href="Mod3Assmnt2_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Mod3Assmnt2_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="Mod3Assmnt2_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="Mod3Assmnt2_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="Mod3Assmnt2_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Untitled</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="quarto" class="level2">
+<h2 class="anchored" data-anchor-id="quarto">Quarto</h2>
+<p>Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <a href="https://quarto.org" class="uri">https://quarto.org</a>.</p>
+</section>
+<section id="running-code" class="level2">
+<h2 class="anchored" data-anchor-id="running-code">Running Code</h2>
+<p>When you click the <strong>Render</strong> button a document will be generated that includes both content and the output of embedded code. You can embed code like this:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse) <span class="co">#tidyverse set of packages and functions</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.2     ✔ readr     2.1.4
+✔ forcats   1.0.0     ✔ stringr   1.5.0
+✔ ggplot2   3.4.2     ✔ tibble    3.2.1
+✔ lubridate 1.9.2     ✔ tidyr     1.3.0
+✔ purrr     1.0.1     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidymodels)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Attaching packages ────────────────────────────────────── tidymodels 1.1.0 ──
+✔ broom        1.0.4     ✔ rsample      1.1.1
+✔ dials        1.2.0     ✔ tune         1.1.1
+✔ infer        1.0.4     ✔ workflows    1.1.3
+✔ modeldata    1.1.0     ✔ workflowsets 1.0.1
+✔ parsnip      1.1.0     ✔ yardstick    1.2.0
+✔ recipes      1.0.6     
+── Conflicts ───────────────────────────────────────── tidymodels_conflicts() ──
+✖ scales::discard() masks purrr::discard()
+✖ dplyr::filter()   masks stats::filter()
+✖ recipes::fixed()  masks stringr::fixed()
+✖ dplyr::lag()      masks stats::lag()
+✖ yardstick::spec() masks readr::spec()
+✖ recipes::step()   masks stats::step()
+• Use tidymodels_prefer() to resolve common conflicts.</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(glmnet) <span class="co">#for Lasso, ridge, and elastic net models </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Loading required package: Matrix
+
+Attaching package: 'Matrix'
+
+The following objects are masked from 'package:tidyr':
+
+    expand, pack, unpack
+
+Loaded glmnet 4.1-7</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(GGally) <span class="co">#create ggcorr and ggpairs plots</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Registered S3 method overwritten by 'GGally':
+  method from   
+  +.gg   ggplot2</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggcorrplot) <span class="co">#create an alternative to ggcorr plots</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(MASS) <span class="co">#access to forward and backward selection algorithms</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'MASS'
+
+The following object is masked from 'package:dplyr':
+
+    select</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaps) <span class="co">#best subset selection</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lmtest) <span class="co">#for the dw test</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Loading required package: zoo
+
+Attaching package: 'zoo'
+
+The following objects are masked from 'package:base':
+
+    as.Date, as.Date.numeric</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(splines) <span class="co">#for nonlinear fitting</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(car)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Loading required package: carData
+
+Attaching package: 'car'
+
+The following object is masked from 'package:dplyr':
+
+    recode
+
+The following object is masked from 'package:purrr':
+
+    some</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(e1071)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'e1071'
+
+The following object is masked from 'package:tune':
+
+    tune
+
+The following object is masked from 'package:rsample':
+
+    permutations
+
+The following object is masked from 'package:parsnip':
+
+    tune</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ROCR)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>You can add options to executable code like this</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>parole <span class="ot">=</span> <span class="fu">read_csv</span>(<span class="st">"parole.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Rows: 675 Columns: 9
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: ","
+dbl (9): male, race, age, state, time.served, max.sentence, multiple.offense...
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(parole)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Rows: 675
+Columns: 9
+$ male              &lt;dbl&gt; 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1…
+$ race              &lt;dbl&gt; 1, 1, 2, 1, 2, 2, 1, 1, 1, 2, 2, 1, 1, 1, 1, 2, 1, 1…
+$ age               &lt;dbl&gt; 33.2, 39.7, 29.5, 22.4, 21.6, 46.7, 31.0, 24.6, 32.6…
+$ state             &lt;dbl&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1…
+$ time.served       &lt;dbl&gt; 5.5, 5.4, 5.6, 5.7, 5.4, 6.0, 6.0, 4.8, 4.5, 4.7, 4.…
+$ max.sentence      &lt;dbl&gt; 18, 12, 12, 18, 12, 18, 18, 12, 13, 12, 12, 12, 16, …
+$ multiple.offenses &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0…
+$ crime             &lt;dbl&gt; 4, 3, 3, 1, 1, 4, 3, 1, 3, 2, 1, 1, 3, 3, 3, 1, 3, 1…
+$ violator          &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0…</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>parole <span class="ot">=</span> parole <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">male =</span> <span class="fu">as_factor</span>(male), <span class="at">race =</span> <span class="fu">as_factor</span>(race), <span class="at">state =</span> <span class="fu">as_factor</span>(state), <span class="at">crime =</span> <span class="fu">as_factor</span>(crime), <span class="at">multiple.offenses =</span> <span class="fu">as_factor</span>(multiple.offenses), <span class="at">violator =</span> <span class="fu">as_factor</span>(violator))</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>parole</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 675 × 9
+   male  race    age state time.served max.sentence multiple.offenses crime
+   &lt;fct&gt; &lt;fct&gt; &lt;dbl&gt; &lt;fct&gt;       &lt;dbl&gt;        &lt;dbl&gt; &lt;fct&gt;             &lt;fct&gt;
+ 1 1     1      33.2 1             5.5           18 0                 4    
+ 2 0     1      39.7 1             5.4           12 0                 3    
+ 3 1     2      29.5 1             5.6           12 0                 3    
+ 4 1     1      22.4 1             5.7           18 0                 1    
+ 5 1     2      21.6 1             5.4           12 0                 1    
+ 6 1     2      46.7 1             6             18 0                 4    
+ 7 1     1      31   1             6             18 0                 3    
+ 8 0     1      24.6 1             4.8           12 0                 1    
+ 9 0     1      32.6 1             4.5           13 0                 3    
+10 1     2      29.1 1             4.7           12 0                 2    
+# ℹ 665 more rows
+# ℹ 1 more variable: violator &lt;fct&gt;</code></pre>
+</div>
+</div>
+<p>The <code>echo: false</code> option disables the printing of code (only output is displayed).</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>parole <span class="ot">=</span> parole <span class="sc">%&gt;%</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">male =</span> <span class="fu">fct_recode</span>(male, <span class="st">"female"</span> <span class="ot">=</span> <span class="st">"0"</span>, <span class="st">"male"</span> <span class="ot">=</span> <span class="st">"1"</span> )) <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">race =</span> <span class="fu">fct_recode</span>(race, <span class="st">"otherwise"</span> <span class="ot">=</span> <span class="st">"2"</span>, <span class="st">"white"</span> <span class="ot">=</span> <span class="st">"1"</span> )) <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">state =</span> <span class="fu">fct_recode</span>(state, <span class="st">"Kentucky"</span> <span class="ot">=</span> <span class="st">"2"</span>, <span class="st">"Louisiana"</span> <span class="ot">=</span> <span class="st">"3"</span>, <span class="st">"Virgina"</span> <span class="ot">=</span> <span class="st">"4"</span>, <span class="st">"Any other state"</span> <span class="ot">=</span> <span class="st">"1"</span> )) <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">crime =</span> <span class="fu">fct_recode</span>(crime, <span class="st">"larceny"</span> <span class="ot">=</span> <span class="st">"2"</span>, <span class="st">"drug-related"</span> <span class="ot">=</span> <span class="st">"3"</span>, <span class="st">"driving-related"</span> <span class="ot">=</span> <span class="st">"4"</span>, <span class="st">"Any other crime"</span> <span class="ot">=</span> <span class="st">"1"</span> )) <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">multiple.offenses =</span> <span class="fu">fct_recode</span>(multiple.offenses, <span class="st">"otherwise"</span> <span class="ot">=</span> <span class="st">"0"</span>, <span class="st">"incarcerated for multiple offenses"</span> <span class="ot">=</span> <span class="st">"1"</span> )) <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">violator =</span> <span class="fu">fct_recode</span>(violator, <span class="st">"parolee complete the parole without violation"</span> <span class="ot">=</span> <span class="st">"0"</span>, <span class="st">"parolee violated the parole"</span> <span class="ot">=</span> <span class="st">"1"</span> ))</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a> </span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(parole)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>tibble [675 × 9] (S3: tbl_df/tbl/data.frame)
+ $ male             : Factor w/ 2 levels "female","male": 2 1 2 2 2 2 2 1 1 2 ...
+ $ race             : Factor w/ 2 levels "white","otherwise": 1 1 2 1 2 2 1 1 1 2 ...
+ $ age              : num [1:675] 33.2 39.7 29.5 22.4 21.6 46.7 31 24.6 32.6 29.1 ...
+ $ state            : Factor w/ 4 levels "Any other state",..: 1 1 1 1 1 1 1 1 1 1 ...
+ $ time.served      : num [1:675] 5.5 5.4 5.6 5.7 5.4 6 6 4.8 4.5 4.7 ...
+ $ max.sentence     : num [1:675] 18 12 12 18 12 18 18 12 13 12 ...
+ $ multiple.offenses: Factor w/ 2 levels "otherwise","incarcerated for multiple offenses": 1 1 1 1 1 1 1 1 1 1 ...
+ $ crime            : Factor w/ 4 levels "Any other crime",..: 4 3 3 1 1 4 3 1 3 2 ...
+ $ violator         : Factor w/ 2 levels "parolee complete the parole without violation",..: 1 1 1 1 1 1 1 1 1 1 ...</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(parole)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>     male            race          age                    state    
+ female:130   white    :389   Min.   :18.40   Any other state:143  
+ male  :545   otherwise:286   1st Qu.:25.35   Kentucky       :120  
+                              Median :33.70   Louisiana      : 82  
+                              Mean   :34.51   Virgina        :330  
+                              3rd Qu.:42.55                        
+                              Max.   :67.00                        
+  time.served     max.sentence                            multiple.offenses
+ Min.   :0.000   Min.   : 1.00   otherwise                         :313    
+ 1st Qu.:3.250   1st Qu.:12.00   incarcerated for multiple offenses:362    
+ Median :4.400   Median :12.00                                             
+ Mean   :4.198   Mean   :13.06                                             
+ 3rd Qu.:5.200   3rd Qu.:15.00                                             
+ Max.   :6.000   Max.   :18.00                                             
+             crime                                              violator  
+ Any other crime:315   parolee complete the parole without violation:597  
+ larceny        :106   parolee violated the parole                  : 78  
+ drug-related   :153                                                      
+ driving-related:101                                                      
+                                                                          
+                                                                          </code></pre>
+</div>
+</div>
+<p>Question 1 : How many parolees ended up violating the parole? 78</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">12345</span>)</span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>parole_split <span class="ot">=</span> <span class="fu">initial_split</span>(parole, <span class="at">prop =</span> <span class="fl">0.70</span>, <span class="at">strata =</span> violator)</span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>train <span class="ot">=</span> <span class="fu">training</span>(parole_split)</span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>test <span class="ot">=</span> <span class="fu">testing</span>(parole_split)</span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a><span class="fu">levels</span>(train<span class="sc">$</span>violator)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "parolee complete the parole without violation"
+[2] "parolee violated the parole"                  </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>train <span class="ot">=</span> train <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">violator =</span> <span class="fu">fct_relevel</span>(violator, <span class="fu">c</span>(<span class="st">"No"</span>,<span class="st">"Yes"</span>)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: There was 1 warning in `mutate()`.
+ℹ In argument: `violator = fct_relevel(violator, c("No", "Yes"))`.
+Caused by warning:
+! 2 unknown levels in `f`: No and Yes</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="fu">levels</span>(train<span class="sc">$</span>violator)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "parolee complete the parole without violation"
+[2] "parolee violated the parole"                  </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(parole, <span class="fu">aes</span>(<span class="at">x=</span>violator, <span class="at">fill =</span> male)) <span class="sc">+</span> <span class="fu">geom_bar</span>() <span class="sc">+</span> <span class="fu">theme_bw</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="Mod3Assmnt2_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Question 3: The violation rate appears slightly higher among males than among females? False</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(parole, <span class="fu">aes</span>(<span class="at">x=</span>violator, <span class="at">fill =</span> state)) <span class="sc">+</span> <span class="fu">geom_bar</span>() <span class="sc">+</span> <span class="fu">theme_bw</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="Mod3Assmnt2_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Question 4: The violation rate is considerably higher in Louisiana than in other states? True</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(parole, <span class="fu">aes</span>(<span class="at">x=</span>violator, <span class="at">y =</span> max.sentence)) <span class="sc">+</span> <span class="fu">geom_boxplot</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="Mod3Assmnt2_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Question 5: The violation rate appears slightly higher among parolees with shorter max sentence values? True</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>parole_model <span class="ot">=</span> </span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">logistic_reg</span>() <span class="sc">%&gt;%</span> <span class="co">#note the use of logistic_reg</span></span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_engine</span>(<span class="st">"glm"</span>) <span class="co">#standard logistic regression engine is glm</span></span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a>parole_recipe <span class="ot">=</span> <span class="fu">recipe</span>(violator <span class="sc">~</span> state, train) <span class="sc">%&gt;%</span></span>
+<span id="cb37-6"><a href="#cb37-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">step_dummy</span>(<span class="fu">all_nominal</span>(), <span class="sc">-</span><span class="fu">all_outcomes</span>()) <span class="co">#exclude the response variable from being dummy converted  </span></span>
+<span id="cb37-7"><a href="#cb37-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-8"><a href="#cb37-8" aria-hidden="true" tabindex="-1"></a>logreg_wf <span class="ot">=</span> <span class="fu">workflow</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb37-9"><a href="#cb37-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_recipe</span>(parole_recipe) <span class="sc">%&gt;%</span> </span>
+<span id="cb37-10"><a href="#cb37-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_model</span>(parole_model)</span>
+<span id="cb37-11"><a href="#cb37-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-12"><a href="#cb37-12" aria-hidden="true" tabindex="-1"></a>parole_fit <span class="ot">=</span> <span class="fu">fit</span>(logreg_wf, train)</span>
+<span id="cb37-13"><a href="#cb37-13" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(parole_fit<span class="sc">$</span>fit<span class="sc">$</span>fit<span class="sc">$</span>fit)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+stats::glm(formula = ..y ~ ., family = stats::binomial, data = data)
+
+Coefficients:
+                Estimate Std. Error z value Pr(&gt;|z|)    
+(Intercept)     -1.75539    0.28944  -6.065 1.32e-09 ***
+state_Kentucky  -0.09521    0.43471  -0.219 0.826636    
+state_Louisiana  1.40709    0.39351   3.576 0.000349 ***
+state_Virgina   -2.08191    0.53672  -3.879 0.000105 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 335.47  on 470  degrees of freedom
+Residual deviance: 270.95  on 467  degrees of freedom
+AIC: 278.95
+
+Number of Fisher Scoring iterations: 6</code></pre>
+</div>
+</div>
+<p>Question 6: Which state is base level summary? other</p>
+<p>Question 7: AIC? 278.95</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>parole2 <span class="ot">=</span> train <span class="sc">%&gt;%</span> dplyr<span class="sc">::</span><span class="fu">select</span>(<span class="st">"violator"</span>,<span class="st">"state"</span>, <span class="st">"multiple.offenses"</span>, <span class="st">"race"</span>)</span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>parole2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 471 × 4
+   violator                                      state   multiple.offenses race 
+   &lt;fct&gt;                                         &lt;fct&gt;   &lt;fct&gt;             &lt;fct&gt;
+ 1 parolee complete the parole without violation Any ot… otherwise         white
+ 2 parolee complete the parole without violation Any ot… otherwise         othe…
+ 3 parolee complete the parole without violation Any ot… otherwise         othe…
+ 4 parolee complete the parole without violation Any ot… otherwise         white
+ 5 parolee complete the parole without violation Any ot… otherwise         white
+ 6 parolee complete the parole without violation Any ot… otherwise         othe…
+ 7 parolee complete the parole without violation Any ot… otherwise         white
+ 8 parolee complete the parole without violation Any ot… otherwise         white
+ 9 parolee complete the parole without violation Any ot… otherwise         white
+10 parolee complete the parole without violation Any ot… otherwise         white
+# ℹ 461 more rows</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>parole_model2 <span class="ot">=</span> </span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">logistic_reg</span>() <span class="sc">%&gt;%</span> <span class="co">#note the use of logistic_reg</span></span>
+<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_engine</span>(<span class="st">"glm"</span>) <span class="co">#standard logistic regression engine is glm</span></span>
+<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-5"><a href="#cb41-5" aria-hidden="true" tabindex="-1"></a>parole_recipe2 <span class="ot">=</span> <span class="fu">recipe</span>(violator <span class="sc">~</span>., parole2) <span class="sc">%&gt;%</span></span>
+<span id="cb41-6"><a href="#cb41-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">step_dummy</span>(<span class="fu">all_nominal</span>(), <span class="sc">-</span><span class="fu">all_outcomes</span>()) <span class="co">#exclude the response variable from being dummy converted  </span></span>
+<span id="cb41-7"><a href="#cb41-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-8"><a href="#cb41-8" aria-hidden="true" tabindex="-1"></a>logreg_wf <span class="ot">=</span> <span class="fu">workflow</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb41-9"><a href="#cb41-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_recipe</span>(parole_recipe2) <span class="sc">%&gt;%</span> </span>
+<span id="cb41-10"><a href="#cb41-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_model</span>(parole_model2)</span>
+<span id="cb41-11"><a href="#cb41-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-12"><a href="#cb41-12" aria-hidden="true" tabindex="-1"></a>parole_fit2 <span class="ot">=</span> <span class="fu">fit</span>(logreg_wf, parole2)</span>
+<span id="cb41-13"><a href="#cb41-13" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(parole_fit2<span class="sc">$</span>fit<span class="sc">$</span>fit<span class="sc">$</span>fit)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+stats::glm(formula = ..y ~ ., family = stats::binomial, data = data)
+
+Coefficients:
+                                                     Estimate Std. Error
+(Intercept)                                          -2.47873    0.36085
+state_Kentucky                                       -0.01418    0.46926
+state_Louisiana                                       0.11876    0.49950
+state_Virgina                                        -3.58422    0.63848
+multiple.offenses_incarcerated.for.multiple.offenses  1.65689    0.39652
+race_otherwise                                        1.11646    0.39092
+                                                     z value Pr(&gt;|z|)    
+(Intercept)                                           -6.869 6.46e-12 ***
+state_Kentucky                                        -0.030  0.97590    
+state_Louisiana                                        0.238  0.81206    
+state_Virgina                                         -5.614 1.98e-08 ***
+multiple.offenses_incarcerated.for.multiple.offenses   4.179 2.93e-05 ***
+race_otherwise                                         2.856  0.00429 ** 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 335.47  on 470  degrees of freedom
+Residual deviance: 244.52  on 465  degrees of freedom
+AIC: 256.52
+
+Number of Fisher Scoring iterations: 6</code></pre>
+</div>
+</div>
+<p>Question 8: Which variables are significant in the resulting model (select all that are significant)? State, multiple.offenses and race</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>newdata <span class="ot">=</span> <span class="fu">data.frame</span>(<span class="at">state =</span> <span class="st">"Louisiana"</span>, <span class="at">multiple.offenses =</span> <span class="st">"incarcerated for multiple offenses"</span>, <span class="at">race =</span> <span class="st">"white"</span>)</span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a><span class="fu">predict</span>(parole_fit2, newdata, <span class="at">type=</span><span class="st">"prob"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 1 × 2
+  `.pred_parolee complete the parole without violation` .pred_parolee violated…¹
+                                                  &lt;dbl&gt;                    &lt;dbl&gt;
+1                                                 0.669                    0.331
+# ℹ abbreviated name: ¹​`.pred_parolee violated the parole`</code></pre>
+</div>
+</div>
+<p>Question 9: Use your model from Question 8 to determine the probability (to two decimal places) that the<br>
+following parolee will violate parole: The parolee is in Louisiana, has multiple offenses, and is white? 0.33</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ROCR)</span>
+<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a>predictions <span class="ot">=</span> <span class="fu">predict</span>(parole_fit2, parole2, <span class="at">type=</span><span class="st">"prob"</span>)[<span class="dv">2</span>]</span>
+<span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(predictions)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 1
+  `.pred_parolee violated the parole`
+                                &lt;dbl&gt;
+1                              0.0774
+2                              0.204 
+3                              0.204 
+4                              0.0774
+5                              0.0774
+6                              0.204 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a>ROCRpred <span class="ot">=</span> <span class="fu">prediction</span>(predictions, parole2<span class="sc">$</span>violator) </span>
+<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb47-3"><a href="#cb47-3" aria-hidden="true" tabindex="-1"></a><span class="do">###You shouldn't need to ever change the next two lines:</span></span>
+<span id="cb47-4"><a href="#cb47-4" aria-hidden="true" tabindex="-1"></a>ROCRperf <span class="ot">=</span> <span class="fu">performance</span>(ROCRpred, <span class="st">"tpr"</span>, <span class="st">"fpr"</span>)</span>
+<span id="cb47-5"><a href="#cb47-5" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(ROCRperf, <span class="at">colorize=</span><span class="cn">TRUE</span>, <span class="at">print.cutoffs.at=</span><span class="fu">seq</span>(<span class="dv">0</span>,<span class="dv">1</span>,<span class="at">by=</span><span class="fl">0.1</span>), <span class="at">text.adj=</span><span class="fu">c</span>(<span class="sc">-</span><span class="fl">0.2</span>,<span class="fl">1.7</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="Mod3Assmnt2_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a>opt.cut <span class="ot">=</span> <span class="cf">function</span>(perf, pred){</span>
+<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a>    cut.ind <span class="ot">=</span> <span class="fu">mapply</span>(<span class="at">FUN=</span><span class="cf">function</span>(x, y, p){</span>
+<span id="cb48-3"><a href="#cb48-3" aria-hidden="true" tabindex="-1"></a>        d <span class="ot">=</span> (x <span class="sc">-</span> <span class="dv">0</span>)<span class="sc">^</span><span class="dv">2</span> <span class="sc">+</span> (y<span class="dv">-1</span>)<span class="sc">^</span><span class="dv">2</span></span>
+<span id="cb48-4"><a href="#cb48-4" aria-hidden="true" tabindex="-1"></a>        ind <span class="ot">=</span> <span class="fu">which</span>(d <span class="sc">==</span> <span class="fu">min</span>(d))</span>
+<span id="cb48-5"><a href="#cb48-5" aria-hidden="true" tabindex="-1"></a>        <span class="fu">c</span>(<span class="at">sensitivity =</span> y[[ind]], <span class="at">specificity =</span> <span class="dv">1</span><span class="sc">-</span>x[[ind]], </span>
+<span id="cb48-6"><a href="#cb48-6" aria-hidden="true" tabindex="-1"></a>            <span class="at">cutoff =</span> p[[ind]])</span>
+<span id="cb48-7"><a href="#cb48-7" aria-hidden="true" tabindex="-1"></a>    }, perf<span class="sc">@</span>x.values, perf<span class="sc">@</span>y.values, pred<span class="sc">@</span>cutoffs)</span>
+<span id="cb48-8"><a href="#cb48-8" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb48-9"><a href="#cb48-9" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">opt.cut</span>(ROCRperf, ROCRpred))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>                 [,1]
+sensitivity 0.7222222
+specificity 0.8369305
+cutoff      0.2015788</code></pre>
+</div>
+</div>
+<p>Question 10: What is the value of this threshold (to four decimal places)? 0.2016</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a>t1 <span class="ot">=</span> <span class="fu">table</span>(parole2<span class="sc">$</span>violator,predictions <span class="sc">&gt;</span> <span class="fl">0.2015788</span>)</span>
+<span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a>t1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>                                               
+                                                FALSE TRUE
+  parolee complete the parole without violation   360   57
+  parolee violated the parole                      18   36</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a>(t1[<span class="dv">1</span>,<span class="dv">1</span>]<span class="sc">+</span>t1[<span class="dv">2</span>,<span class="dv">2</span>])<span class="sc">/</span><span class="fu">nrow</span>(parole2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.8407643</code></pre>
+</div>
+</div>
+<p>Question 11: Continuing to use your model from Question 8, what is the model's accuracy (on the training<br>
+set) given the cutoff from Question 10? Report the accuracy to three decimal place? 0.841</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Sensitivity</span></span>
+<span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a><span class="dv">36</span><span class="sc">/</span>(<span class="dv">18</span><span class="sc">+</span><span class="dv">36</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.6666667</code></pre>
+</div>
+</div>
+<p>Question 12 Continuing to use the model from Question 8, what is the sensitivity of the model on the<br>
+training set (to three decimal places)? 0.667</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb56"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a>t1 <span class="ot">=</span> <span class="fu">table</span>(parole2<span class="sc">$</span>violator,predictions <span class="sc">&gt;</span> <span class="fl">0.2</span>)</span>
+<span id="cb56-2"><a href="#cb56-2" aria-hidden="true" tabindex="-1"></a>t1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>                                               
+                                                FALSE TRUE
+  parolee complete the parole without violation   349   68
+  parolee violated the parole                      15   39</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb58"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a>(t1[<span class="dv">1</span>,<span class="dv">1</span>]<span class="sc">+</span>t1[<span class="dv">2</span>,<span class="dv">2</span>])<span class="sc">/</span><span class="fu">nrow</span>(parole2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.8237792</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb60"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a>t1 <span class="ot">=</span> <span class="fu">table</span>(parole2<span class="sc">$</span>violator,predictions <span class="sc">&gt;</span> <span class="fl">0.5</span>)</span>
+<span id="cb60-2"><a href="#cb60-2" aria-hidden="true" tabindex="-1"></a>t1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>                                               
+                                                FALSE TRUE
+  parolee complete the parole without violation   404   13
+  parolee violated the parole                      35   19</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb62"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a>(t1[<span class="dv">1</span>,<span class="dv">1</span>]<span class="sc">+</span>t1[<span class="dv">2</span>,<span class="dv">2</span>])<span class="sc">/</span><span class="fu">nrow</span>(parole2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.8980892</code></pre>
+</div>
+</div>
+<p>Question 13: For the model from Question 8, which probability threshold results in the best accuracy (on<br>
+the training set)? 0.5<br>
+<br>
+Question 14: Use your probability threshold from Question 13 to determine the accuracy of the model on<br>
+the testing set (to three decimal places). 0.898<br>
+</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb64"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a>t1 <span class="ot">=</span> <span class="fu">table</span>(parole2<span class="sc">$</span>violator,predictions <span class="sc">&gt;</span> <span class="fl">0.4</span>)</span>
+<span id="cb64-2"><a href="#cb64-2" aria-hidden="true" tabindex="-1"></a>t1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>                                               
+                                                FALSE TRUE
+  parolee complete the parole without violation   404   13
+  parolee violated the parole                      35   19</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb66"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb66-1"><a href="#cb66-1" aria-hidden="true" tabindex="-1"></a>(t1[<span class="dv">1</span>,<span class="dv">1</span>]<span class="sc">+</span>t1[<span class="dv">2</span>,<span class="dv">2</span>])<span class="sc">/</span><span class="fu">nrow</span>(parole2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.8980892</code></pre>
+</div>
+</div>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
